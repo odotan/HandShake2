@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HandShake</title>
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+
+	<!-- write a qr -->
+	<script type="text/javascript" src="bower_components/qrcode.js/qrcode.js"></script>
+
+	<!-- read a qr -->
+	<script type="text/javascript" src="bower_components/jsqrcode/src/grid.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/version.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/detector.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/formatinf.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/errorlevel.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/bitmat.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/datablock.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/bmparser.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/datamask.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/rsdecoder.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/gf256poly.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/gf256.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/decoder.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/qrcode.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/findpat.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/alignpat.js"></script>
+	<script type="text/javascript" src="bower_components/jsqrcode/src/databr.js"></script>
+
+	<script type="text/javascript" src="js/webqr.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="mainbody"></div>
+	<input id="txt2read" type="text" placeholder="enter text to encode"/>
+	<div id="qrs">
+		<label for="qrcode_write">QR from text</label>
+		<div id="qrcode_write" class="qr"></div>
+		<label for="qrcode_read">Text from QR</label>
+		<input id="scan" type="button" value="Scan"/><br>
+		<div id="cam"></div>
+		<canvas id="qr-canvas"></canvas>
+		<div id="qrcode_read"  class="qr"></div>
+	</div>
+</body>
+</html>
