@@ -7,7 +7,7 @@ https://github.com/LazarSoft/jsqrcode
 
 ##Install
 
-'''sh
+```sh
 	bower install
 	compass watch
-'''
+```
